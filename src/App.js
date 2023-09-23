@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import { Counter } from './Counter/Counter';
+import { ImgName } from './ImgName';
 
 function App() {
+  const handleClick = () => {
+    alert('hi');
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>learn react</h1>
+      <ImgName myName="Shubham" handleClick={handleClick} />
+      <ImgName myName="Suraj Sir" />
+      <ImgName myName="Yogesh" />
+      <Counter />
     </div>
   );
 }
